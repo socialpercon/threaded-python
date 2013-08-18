@@ -72,7 +72,6 @@ def get_tasks_order():
 
         print "Running task " + current_task + " with runtime " + str(all_runtimes[current_task])
         time.sleep(all_runtimes[current_task])
-        print "------------------------------> Finished running task " + current_task
 
         for neighbour in dependencies_to_remove[current_task]: # We remove all dependencies for future tasks
             all_dependencies[neighbour].remove(current_task) # We remove a dependency
@@ -87,6 +86,7 @@ def get_tasks_order():
                 threads.append(new_task_thread)
 
         time.sleep(0)
+        print "------------------------------> Finished running task " + current_task
 
 if __name__ == "__main__":
 
