@@ -1,0 +1,39 @@
+{
+    "tasks": [
+        {
+            "id": "A",
+            "runtime": 3,
+            "dependencies": []
+        },
+        {
+            "id": "B",
+            "runtime": 5,
+            "dependencies": ["A"]
+        },
+        {
+            "id": "C",
+            "runtime": 1,
+            "dependencies": ["A", "E"]
+        },
+        {
+            "id": "D",
+            "runtime": 1,
+            "dependencies": ["C"]
+        },
+        {
+            "id": "E",
+            "runtime": 1,
+            "dependencies": []
+        },
+        {
+            "id": "F",
+            "runtime": 8,
+            "dependencies": []
+        },
+        {
+            "id": "K",
+            "runtime": 1,
+            "dependencies": ["B"]
+        }
+    ]
+}
